@@ -1,1 +1,1 @@
-first website build with tailwindcss
+Tugas untuk project bisnis di sekolah
