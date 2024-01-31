@@ -61,76 +61,32 @@
                     <h1 class="font-bold text-white w-fit text-center">Barang yang anda liat hanyalah ilustrasi semata!. kondisi di lapangan bisa jauh berbeda dengan yang ada di foto.</h1>
                 </div>
             </div>
-            <!-- sorting -->
-            <div class="sorting mx-4 py-4 flex gap-5 justify-center flex-col items-center">
-                <div class="status font-bold text-2xl">
-                    <h1>Status</h1>
-                </div>
-                <div class="category flex gap-4 w-auto flex-wrap">
-                    <div class="on-sale flex items-center gap-2"><i class="fa-solid fa-tag text-green-600"></i><p class="hidden sm:inline font-bold">Tersedia</p></div>
-                    <div class="on-sale flex items-center gap-2"><i class="fa-solid fa-circle-exclamation text-red-700"></i><p class="hidden sm:inline font-bold">Stok habis</p></div>
-                </div>
-            </div>
-            
             <!-- barang container -->
             <div class="link-1 flex gap-3 p-3 justify-center md:px-20 flex-col pb-20">
-                <!-- barang 1 -->
-                <div class="img w-full bg-white shadow-lg sm:flex rounded-lg">
-                    <div class="w-full sm:w-auto sm:h-auto flex justify-center items-center p-4">
-                        <img class="rounded-full w-48 h-48 max-w-max" src="img/sala_lauak.jpg" alt="">
-                    </div>
-                    <div class="p-4 w-full h-auto flex flex-col justify-center">
-                        <h1 class="font-bold">Sala Lauak</h1>
-                        <p class="py-2">Sala lauak merupakan hidangan berbentuk gumpalan sebesar ibu jari yang terbuat dari adonan daging ikan yang dihaluskan dan dicampur tepung</p>
-                        <div class="terjual flex object-fill">
-                            <div class="link flex gap-2 px-3 w-full items-center h-full">
-                                <a href="sala_lauak.html" type="button" class="p-2 text-white flex items-center justify-center font-bold w-16 bg-green-500 rounded-md">Beli</a>
-                                <h1 class="font-bold">Harga : 5.000</h1>
-                            </div>
-                            <div class="link flex gap-2 w-full items-center justify-end px-6">
-                                <p class="font-bold">Tersedia</p>
-                                <i class="fa-solid fa-tag text-green-500"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- barang 2 -->
-                <div class="img w-full bg-white shadow-lg sm:flex rounded-lg">
+                <div class="img w-full bg-white shadow-lg flex flex-col rounded-lg">
                     <div class="w-full sm:w-auto sm:h-auto flex justify-center items-center p-4">
                         <img class="rounded-full w-48 h-48 max-w-max" src="img/ayam_pop2.jpg" alt="">
                     </div>
                     <div class="p-4 w-full h-auto flex flex-col justify-center">
                         <h1 class="font-bold">Ayam Pop</h1>
                         <p class="py-2">Ayam pop adalah salah satu masakan yang berbahan dasar daging ayam dari provinsi Sumatera Barat. Ayam pop termasuk salah satu bentuk hidangan ayam goreng, tetapi yang membedakan ayam pop dengan ayam goreng pada umumnya adalah ayam pop memiliki warna yang masih putih pucat ketika selesai dimasak.</p>
-                        <div class="terjual flex object-fill">
-                            <div class="link flex gap-2 px-3 w-full items-center h-full">
-                                <a href="ayam_pop.html" type="button" class="p-2 text-white flex items-center justify-center font-bold w-16 bg-green-500 rounded-md">Beli</a>
-                                <h1 class="font-bold">Harga : 10.000</h1>
-                            </div>
-                            <div class="link flex gap-2 w-full items-center justify-end px-6">
-                                <p class="font-bold">Tersedia</p>
-                                <i class="fa-solid fa-tag text-green-500"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- barang 3 -->
-                <div class="img w-full bg-white shadow-lg sm:flex rounded-lg">
-                    <div class="w-full sm:w-auto sm:h-auto flex justify-center items-center p-4">
-                        <img class="rounded-full w-48 h-48 max-w-max" src="img/es_jeruk.jpg" alt="">
-                    </div>
-                    <div class="p-4 w-full h-auto flex flex-col justify-center">
-                        <h1 class="font-bold">Es Jeruk</h1>
-                        <p class="py-2">Es jeruk adalah minuman yang terbuat dari buah jeruk. menyehatkan tubuh. tentunya memiliki manfaat yang sangat baik bagi kesehatan. memiliki rasa yang lezat.</p>
-                        <div class="terjual flex object-fill">
-                            <div class="link flex gap-2 px-3 w-full items-center h-full">
-                                <a href="es_jeruk.html" type="button" class="p-2 text-white flex items-center justify-center font-bold w-16 bg-green-500 rounded-md">Beli</a>
-                                <h1 class="font-bold">Harga : 3.000</h1>
-                            </div>
-                            <div class="link flex gap-2 w-full items-center justify-end px-6">
-                                <p class="font-bold">Tersedia</p>
-                                <i class="fa-solid fa-tag text-green-500"></i>
-                            </div>
+                        <div class="terjual flex flex-col object-fill justify-center p-10 items-center gap-8">
+                          <div class="status flex justify-center">
+                            <h1 class="font-bold text-2xl text-center">Silahkan di order pada form tersebut</h1>
+                          </div>
+                          <form action="" class="flex flex-col shadow-lg p-8 sm:w-96 rounded-lg">
+                              <label for="" class="nama font-bold">Nama</label>
+                              <input type="text" class="border-2" placeholder="Nama..." required>
+                              <label for="" class="jurusan font-bold">Jurusan</label>
+                              <input type="text" class="border-2" placeholder="Jurusan..." required>
+                              <label for="" class="jumlah font-bold">Jumlah Makanan/Minuman</label>
+                              <input type="text" class="border-2" placeholder="Jumlah..." required>
+                              <label for="" class="catatan font-bold">Catatan (opsional)</label>
+                              <input type="text" class="border-2" placeholder="catatan..." required>
+                              <div class="submit flex py-4 items-center justify-center">
+                                <button type="submit" onclick="sendwhatsapp('ayam_pop')" class="bg-blue-600 p-2 rounded-md w-full text-white font-bold">Submit</button>
+                              </div>
+                          </form>
                         </div>
                     </div>
                 </div>

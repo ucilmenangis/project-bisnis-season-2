@@ -61,17 +61,6 @@
                     <h1 class="font-bold text-white w-fit text-center">Barang yang anda liat hanyalah ilustrasi semata!. kondisi di lapangan bisa jauh berbeda dengan yang ada di foto.</h1>
                 </div>
             </div>
-            <!-- sorting -->
-            
-            <div class="sorting mx-4 py-4 flex gap-5 justify-center flex-col items-center">
-                <div class="status font-bold text-2xl">
-                    <h1>Status</h1>
-                </div>
-                <div class="category flex gap-4 w-auto flex-wrap">
-                    <div class="on-sale flex items-center gap-2"><i class="fa-solid fa-tag text-green-600"></i><p class="hidden sm:inline font-bold">Tersedia</p></div>
-                    <div class="on-sale flex items-center gap-2"><i class="fa-solid fa-circle-exclamation text-red-700"></i><p class="hidden sm:inline font-bold">Stok habis</p></div>
-                </div>
-            </div>
             
             <!-- barang container -->
             <div class="link-1 flex gap-3 p-3 justify-center md:px-20 flex-col pb-20">
@@ -86,15 +75,17 @@
                           <div class="status flex justify-center">
                             <h1 class="font-bold text-2xl text-center">Silahkan di order pada form tersebut</h1>
                           </div>
-                          <form action="" class="flex flex-col shadow-lg p-8 w-96 rounded-lg">
-                              <label for="" class="font-bold">Nama</label>
-                              <input type="text" class="border-2" placeholder="Nama..." clas>
-                              <label for="" class="font-bold">Jurusan</label>
-                              <input type="text" class="border-2" placeholder="Jurusan...">
-                              <label for="" class="font-bold">Jumlah Makanan/Minuman</label>
-                              <input type="text" class="border-2" placeholder="Jumlah...">
+                          <form action="" class="flex flex-col shadow-lg p-8 sm:w-96 rounded-lg">
+                              <label for="" class="nama font-bold">Nama</label>
+                              <input type="text" class="border-2" placeholder="Nama..." required>
+                              <label for="" class="jurusan font-bold">Jurusan</label>
+                              <input type="text" class="border-2" placeholder="Jurusan..." required>
+                              <label for="" class="jumlah font-bold">Jumlah Makanan/Minuman</label>
+                              <input type="text" class="border-2" placeholder="Jumlah..." required>
+                              <label for="" class="catatan font-bold">Catatan (opsional)</label>
+                              <input type="text" class="border-2" placeholder="catatan..." required>
                               <div class="submit flex py-4 items-center justify-center">
-                                <a type="submit" class="bg-blue-700">Submit</a>
+                                <button type="submit" onclick="sendwhatsapp('sala_ulak')" class="bg-blue-600 p-2 rounded-md w-full text-white font-bold">Submit</button>
                               </div>
                           </form>
                         </div>
