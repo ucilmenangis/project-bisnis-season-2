@@ -15,7 +15,7 @@ function clickFilter (id,){
 }
 
       function sendwhatsapp(makanan){
-       var phonenumber = "+6285859164393";
+       var phonenumber = "+6281358610650";
 
        var nama = document.getElementById("nama").value;
        var jurusan = document.getElementById("jurusan").value;
