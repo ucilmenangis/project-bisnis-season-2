@@ -17,19 +17,21 @@ function clickFilter (id,){
       function sendwhatsapp(makanan){
        var phonenumber = "+6285859164393";
 
-       var nama = document.querySelector(".nama").value;
-       var jurusan = document.querySelector(".jurusan").value;
-       var jumlah = document.querySelector(".jumlah").value;
-       var catatan = document.querySelector(".catatan").value;
+       var nama = document.getElementById("nama").value;
+       var jurusan = document.getElementById("jurusan").value;
+       var jumlah = document.getElementById("jumlah").value;
+       var catatan = document.getElementById("catatan").value;
 
        var url = "https://wa.me/" + phonenumber + "?text="
        +"*Name :* "+nama+"%0a"
        +"*Makanan :* "+makanan+"%0a"
-       +"*Email :* "+jurusan+"%0a"
-       +"*Country:* "+jumlah+"%0a"
-       +"*Message :* "+catatan
+       +"*Jurusan :* "+jurusan+"%0a"
+       +"*Jumlah:* "+jumlah+"%0a"
+       +"*Catatan :* "+catatan
        +"%0a%0a"
-       +"This is an example of send HTML form data to WhatsApp";
+       +"saya "+nama+ "ingin memesan makanan/minuman tersebut";
 
        window.open(url, '_blank').focus();
+       alert('terima kasih sudah memesan')
+       window.location.href = 'index.html'
      }
