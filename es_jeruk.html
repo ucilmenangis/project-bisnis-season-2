@@ -63,19 +63,35 @@
                           <div class="status flex justify-center">
                             <h1 class="font-bold text-2xl text-center">Silahkan di order pada form tersebut</h1>
                           </div>
-                          <form action="" class="flex flex-col shadow-lg p-8 sm:w-96 rounded-lg">
+                            <form action="" class="flex flex-col shadow-lg p-8 sm:w-96 rounded-lg">
                               <label for="" class="nama font-bold">Nama</label>
                               <input type="text" class="border-2" placeholder="Nama..." required id="nama">
                               <label for="" class="jurusan font-bold">Jurusan</label>
-                              <input type="text" class="border-2" placeholder="Jurusan..." required id="jurusan">
+                              <select name="jurusan" id="jurusan">
+                                <option value="TKJ">TKJ</option>
+                                <option value="PSPTV">PSPTV</option>
+                                <option value="RPL">RPL</option>
+                                <option value="AKL">AKL</option>
+                                <option value="MM/DKV">MM/DKV</option>
+                                <option value="BD">BD</option>
+                                <option value="MP">MP</option>
+                                <option value="LP">LP</option>
+                                <option value="Guru / Karyawan">Guru / Karyawan sekolah</option>
+                              </select>
                               <label for="" class="jumlah font-bold">Jumlah Makanan/Minuman</label>
-                              <input type="text" class="border-2" placeholder="Jumlah..." required id="jumlah">
+                              <select name="jumlah" id="jumlah">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                              </select>
                               <label for="" class="catatan font-bold">Catatan (opsional)</label>
                               <input type="text" class="border-2" placeholder="catatan..." required id="catatan">
                               <div class="submit flex py-4 items-center justify-center">
-                                <button type="submit" onclick="sendwhatsapp('es_jeruk')" class="bg-blue-600 p-2 rounded-md w-full text-white font-bold">Submit</button>
+                                <button type="submit" onclick="sendwhatsapp('sala_ulak')" class="bg-blue-600 p-2 rounded-md w-full text-white font-bold">Submit</button>
                               </div>
-                          </form>
+                            </form>
                         </div>
                     </div>
                 </div>
