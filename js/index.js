@@ -29,7 +29,7 @@ function clickFilter (id,){
        +"*Jumlah:* "+jumlah+"%0a"
        +"*Catatan :* "+catatan
        +"%0a%0a"
-       +"saya "+nama+ "ingin memesan makanan/minuman tersebut";
+       +"saya "+nama+" ingin memesan makanan/minuman tersebut";
 
        window.open(url, '_blank').focus();
        alert('terima kasih sudah memesan')
